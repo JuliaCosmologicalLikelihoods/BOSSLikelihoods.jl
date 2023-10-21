@@ -1,0 +1,6 @@
+[BOSS_data]
+git-tree-sha1 = "98530ebcff6c06839c87a12faf9262c467e0ad7a"
+
+    [[BOSS_data.download]]
+    sha256 = "f7ad7b6b07ffc8d37aadc7043ac5d253f98808ac1601806ac63b35454d31a253"
+    url = "https://gist.github.com/marcobonici/2277ed2494a08996ef73aa7e7cd7459b/raw/98530ebcff6c06839c87a12faf9262c467e0ad7a.tar.gz"

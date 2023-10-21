@@ -1,2 +1,3 @@
 # BOSSLikelihoods.jl
-Repo containing the BOSS galaxy survey likelihood
+
+Repo containing the BOSS galaxy survey likelihood.
