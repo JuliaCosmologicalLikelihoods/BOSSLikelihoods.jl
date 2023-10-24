@@ -63,4 +63,25 @@ function mask_cov(cov, n)
     return Covariance, yerror_Mono, yerror_Quad
 end
 
+function slice_data_cov(data, r_test, Cov, elements_to_remove_left, elements_to_remove_right)
+    first_dataset = vcat(data[1,1+elements_to_remove_left:37-elements_to_remove_right],
+                         data[2,1+elements_to_remove_left:37-elements_to_remove_right])
+    first_dataset_vec = data[:,1+elements_to_remove_left:37-elements_to_remove_right]
+    r_firstdataset = r_test[1+elements_to_remove_left:37-elements_to_remove_right]
+
+    datavec_len = 37-elements_to_remove_left-elements_to_remove_right
+    intermediate_Cov = zeros(37*3, 2*datavec_len)
+    first_Cov = zeros(datavec_len*2,datavec_len*2)
+    for i in 1:datavec_len
+        intermediate_Cov[:,i] = Cov[:, i+elements_to_remove_left]
+        intermediate_Cov[:,i+datavec_len] = Cov[:, i+elements_to_remove_left+40]
+    end
+
+    for i in 1:37-elements_to_remove_left-elements_to_remove_right
+        first_Cov[i,:] = intermediate_Cov[i+elements_to_remove_left,:]
+        first_Cov[i+37-elements_to_remove_left-elements_to_remove_right,:] = intermediate_Cov[i+elements_to_remove_left+37,:]
+    end
+    return first_dataset, r_firstdataset, first_Cov
+end
+
 end # module BOSSLikelihoods
