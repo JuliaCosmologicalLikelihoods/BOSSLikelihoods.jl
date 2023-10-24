@@ -74,7 +74,7 @@ function slice_data_cov(data, r_test, Cov, elements_to_remove_left, elements_to_
     first_Cov = zeros(datavec_len*2,datavec_len*2)
     for i in 1:datavec_len
         intermediate_Cov[:,i] = Cov[:, i+elements_to_remove_left]
-        intermediate_Cov[:,i+datavec_len] = Cov[:, i+elements_to_remove_left+40]
+        intermediate_Cov[:,i+datavec_len] = Cov[:, i+elements_to_remove_left+37]
     end
 
     for i in 1:37-elements_to_remove_left-elements_to_remove_right
