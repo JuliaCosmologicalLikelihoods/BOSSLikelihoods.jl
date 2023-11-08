@@ -1,6 +1,6 @@
 [BOSS_data]
-git-tree-sha1 = "98530ebcff6c06839c87a12faf9262c467e0ad7a"
+git-tree-sha1 = "51f365623876785573a9c77fdafe4188b33b54a6"
 
     [[BOSS_data.download]]
-    sha256 = "f7ad7b6b07ffc8d37aadc7043ac5d253f98808ac1601806ac63b35454d31a253"
-    url = "https://gist.github.com/marcobonici/2277ed2494a08996ef73aa7e7cd7459b/raw/98530ebcff6c06839c87a12faf9262c467e0ad7a.tar.gz"
+    sha256 = "5964c172e0ed080dc437c343808a36628b30ca3ea2c6a094b610729f057e907f"
+    url = "https://gist.github.com/marcobonici/4ba63a88b11ae55bd93ab82bbda30e37/raw/51f365623876785573a9c77fdafe4188b33b54a6.tar.gz"
