@@ -40,7 +40,7 @@ function __init__()
     global mask_lowz_sgc = npzread(joinpath(artifact"BOSS_data", "mask_lowz_sgc.npy"))
 
     global lowz_H = 80.1701
-    global lowz_D = 1990.132
+    global lowz_D = 990.132
     global lowz_rd = 147.653
 
 end
