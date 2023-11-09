@@ -12,14 +12,14 @@ function __init__()
     global cmass_ngc_l4  = npzread(joinpath(artifact"BOSS_data", "cmass_ngc_l4.npy"))
     global cmass_ngc_cov = npzread(joinpath(artifact"BOSS_data", "cmass_ngc_cov.npy"))
     global cmass_ngc_k_mask = npzread(joinpath(artifact"BOSS_data", "k_mask_cmass_ngc.npy"))
-    global cmass_ngc_mask = npzread(joinpath(artifact"BOSS_data", "mask_cmass_ngc.npy"))
+    global cmass_ngc_mask = npzread(joinpath(artifact"BOSS_data","mask_cmass_ngc.npy"))
 
     global cmass_sgc_l0  = npzread(joinpath(artifact"BOSS_data", "cmass_sgc_l0.npy"))
     global cmass_sgc_l2  = npzread(joinpath(artifact"BOSS_data", "cmass_sgc_l2.npy"))
     global cmass_sgc_l4  = npzread(joinpath(artifact"BOSS_data", "cmass_sgc_l4.npy"))
     global cmass_sgc_cov = npzread(joinpath(artifact"BOSS_data", "cmass_sgc_cov.npy"))
     global cmass_sgc_k_mask = npzread(joinpath(artifact"BOSS_data", "k_mask_cmass_sgc.npy"))
-    global cmass_sgc_mask = npzread(joinpath(artifact"BOSS_data", "mask_cmass_sgc.npy"))
+    global cmass_sgc_mask = npzread(joinpath(artifact"BOSS_data","mask_cmass_sgc.npy"))
 
     global cmass_E_z = 1.3718053425836065
     global cmass_d̃A_z = 0.3133754466547983
