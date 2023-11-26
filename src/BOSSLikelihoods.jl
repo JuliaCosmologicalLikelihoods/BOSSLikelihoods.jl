@@ -44,6 +44,8 @@ function __init__()
     global H0_fid = 67.6
     global ΩM_fid = 0.31
 
+    global n_mocks_cov = 2048
+
 end
 
 
@@ -99,6 +101,10 @@ function slice_data_cov(data, r_test, Cov, elements_to_remove_left, elements_to_
         first_Cov[i+37-elements_to_remove_left-elements_to_remove_right,:] = intermediate_Cov[i+elements_to_remove_left+37,:]
     end
     return first_dataset, r_firstdataset, first_Cov
+end
+
+function hartlap_factor(n_mocks, n_element)
+    return (n_mocks-n_element-2)/(n_mocks-1)
 end
 
 end # module BOSSLikelihoods
